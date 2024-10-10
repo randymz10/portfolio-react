@@ -1,2 +1,15 @@
-@import 'bulma/bulma.scss';
+$prussia-blue: #13293D;
+$lapis-lazuli: #006494;
+$cerulean: #247BA0;
+$celestial-blue: #1B98E0;
+$alice-blue: #E8F1F2;
 
+@use 'bulma/sass' with (
+    $family-primary: '"Ubuntu", sans-serif',
+    $primary: $lapis-lazuli,
+    $success: $cerulean,
+    $info: $celestial-blue,
+    $link: $prussia-blue);
+// @import 'bulma/sass';
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
